@@ -1,0 +1,394 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="게시판"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/WriteText"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="180dp"
+            android:text="글작성"/>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 게시물 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="#EEEEEE"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/post1TitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="게시물 제목"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/post1ContentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="게시물 내용"/>
+
+                <TextView
+                    android:id="@+id/post1AuthorTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="작성자: 관리자"/>
+
+                <TextView
+                    android:id="@+id/post1DateTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="작성일: 2023-05-20"/>
+            </LinearLayout>
+            <!-- 게시물 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="#EEEEEE"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/post2TitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="게시물 제목"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/post2ContentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="게시물 내용"/>
+
+                <TextView
+                    android:id="@+id/post2AuthorTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="작성자: 관리자"/>
+
+                <TextView
+                    android:id="@+id/post2DateTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="작성일: 2023-05-20"/>
+            </LinearLayout>
+            <!-- 게시물 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="#EEEEEE"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/post3TitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="게시물 제목"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/post3ContentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="게시물 내용"/>
+
+                <TextView
+                    android:id="@+id/post3AuthorTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="작성자: 관리자"/>
+
+                <TextView
+                    android:id="@+id/post3DateTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="작성일: 2023-05-20"/>
+            </LinearLayout>
+            <!-- 게시물 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="#EEEEEE"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/post4TitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="게시물 제목"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/post4ContentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="게시물 내용"/>
+
+                <TextView
+                    android:id="@+id/post4AuthorTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="작성자: 관리자"/>
+
+                <TextView
+                    android:id="@+id/post4DateTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="작성일: 2023-05-20"/>
+            </LinearLayout>
+            <!-- 게시물 5 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="#EEEEEE"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/post5TitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="게시물 제목"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/post5ContentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="게시물 내용"/>
+
+                <TextView
+                    android:id="@+id/post5AuthorTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="작성자: 관리자"/>
+
+                <TextView
+                    android:id="@+id/post5DateTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="작성일: 2023-05-20"/>
+            </LinearLayout>
+            <!-- 게시물 6 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="#EEEEEE"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/post6TitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="게시물 제목"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/post6ContentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="게시물 내용"/>
+
+                <TextView
+                    android:id="@+id/post6AuthorTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="작성자: 관리자"/>
+
+                <TextView
+                    android:id="@+id/post6DateTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="작성일: 2023-05-20"/>
+            </LinearLayout>
+            <!-- 게시물 7 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="#EEEEEE"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/post7TitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="게시물 제목"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/post7ContentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="게시물 내용"/>
+
+                <TextView
+                    android:id="@+id/post7AuthorTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="작성자: 관리자"/>
+
+                <TextView
+                    android:id="@+id/post7DateTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="작성일: 2023-05-20"/>
+            </LinearLayout>
+            <!-- 게시물 8 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="#EEEEEE"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/post8TitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="게시물 제목"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/post8ContentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="게시물 내용"/>
+
+                <TextView
+                    android:id="@+id/post8AuthorTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="작성자: 관리자"/>
+
+                <TextView
+                    android:id="@+id/post8DateTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="작성일: 2023-05-20"/>
+            </LinearLayout>
+            <!-- 게시물 9 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="#EEEEEE"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/post9TitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="게시물 제목"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/post9ContentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="게시물 내용"/>
+
+                <TextView
+                    android:id="@+id/post9AuthorTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="작성자: 관리자"/>
+
+                <TextView
+                    android:id="@+id/post9DateTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="작성일: 2023-05-20"/>
+            </LinearLayout>
+            <!-- 게시물 10 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="#EEEEEE"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/post10TitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="게시물 제목"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/post10ContentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="게시물 내용"/>
+
+                <TextView
+                    android:id="@+id/post10AuthorTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="작성자: 관리자"/>
+
+                <TextView
+                    android:id="@+id/post10DateTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="작성일: 2023-05-20"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
