@@ -1,5 +1,6 @@
 package com.sample.intentex;
-
+//홈 화면 엑티비티
+//여기서 4개의 버튼이 보여짐
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
