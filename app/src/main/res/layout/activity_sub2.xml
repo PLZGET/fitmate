@@ -1,16 +1,98 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SubActivity1">
+    android:orientation="vertical">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="체중관리"
-        android:textSize="30sp"
-        android:background="@drawable/ic_launcher_background"/>
+        <!--검은색 선-->
+        <View android:id="@+id/view5"
+            android:layout_width="421dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="2dp"
+            android:background="#000000" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.142" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
 
+        <TextView android:id="@+id/textView"
+            android:layout_width="220dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:text="오늘의 몸무게 : "
+            android:textSize="30dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.041" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+
+        <!--입력 버튼 누르면 출력칸에 숫자 나오게하고 싶은데 잘 안되네요,,-->
+        <TextView android:id="@+id/weightView"
+            android:layout_width="253dp"
+            android:layout_height="69dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="570dp"
+            android:gravity="center" android:hint="출력"
+            android:textSize="30dp" android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/circle_chart1"/>
+
+        <!-- 입력 버튼-->
+        <Button android:id="@+id/btn"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="28dp"
+            android:onClick="button_click"
+            android:text="입력"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/pt"/>
+
+       <!-- //입력칸-->
+        <EditText android:id="@+id/pt"
+            android:layout_width="256dp"
+            android:layout_height="81dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="13dp"
+            android:gravity="center"
+            android:hint="오늘의 몸무게 입력"
+            android:inputType="number"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"/>
+
+        <!--//카드뷰-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:cardElevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.39"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.229"
+            app:layout_constraintWidth_percent="0.9"/>
+
+        <!--// 카드뷰-->
+        <HorizontalScrollView
+            android:id="@+id/circle_chart1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            android:fillViewport="true"
+            android:paddingBottom="5dp"
+            android:scrollbars="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/weightView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>

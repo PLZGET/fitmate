@@ -6,20 +6,44 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/fitmate2"
+        android:logo="@drawable/fitmate2"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IntentEx"
         tools:targetApi="31">
         <activity
+            android:name=".InputDietActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MyDietActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".registerActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Login"
-            android:exported="true">
+            android:exported="true"
+            android:label="fitmate">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -54,7 +78,8 @@
         </activity>
         <activity
             android:name=".SubActivity1"
-            android:exported="false">
+            android:exported="false"
+            android:label="게시판">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -62,8 +87,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

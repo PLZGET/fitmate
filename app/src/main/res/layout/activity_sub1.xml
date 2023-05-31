@@ -24,8 +24,16 @@
             android:id="@+id/WriteText"
             android:layout_width="100dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="180dp"
+            android:layout_marginLeft="75dp"
             android:text="글작성"/>
+
+        <Button
+            android:id="@+id/GoBack"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:text="홈"/>
+
     </LinearLayout>
 
 

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "444737247755",
+    "project_id": "intentex-746fc",
+    "storage_bucket": "intentex-746fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:444737247755:android:2510adbe126a5b67c8850e",
+        "android_client_info": {
+          "package_name": "com.sample.intentex"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANCXal5Nn4LyfJwjfEKkZuK0e9YGjlApQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
