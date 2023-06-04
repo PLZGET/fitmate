@@ -1,8 +1,6 @@
 package com.sample.intentex;
 
 import android.content.Context;
-import android.provider.ContactsContract;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,12 +9,12 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class MyAdapter extends BaseAdapter {
+public class SchMyAdapter extends BaseAdapter {
     Context mContext = null;
     LayoutInflater mLayoutInflater = null;
-    ArrayList<Data> sample;
+    ArrayList<SchData> sample;
 
-    public MyAdapter(Context context, ArrayList<Data> data) {
+    public SchMyAdapter(Context context, ArrayList<SchData> data) {
         mContext = context;
         sample = data;
         mLayoutInflater = LayoutInflater.from(mContext);
@@ -42,7 +40,7 @@ public class MyAdapter extends BaseAdapter {
     }
 
     @Override
-    public Data getItem(int position) {
+    public SchData getItem(int position) {
         return sample.get(position);
     }
 

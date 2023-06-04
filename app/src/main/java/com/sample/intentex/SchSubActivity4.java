@@ -17,16 +17,15 @@ import android.widget.ProgressBar;
 
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
-public class SubActivity4 extends AppCompatActivity {
+public class SchSubActivity4 extends AppCompatActivity {
 
     private Button schAdd;
     private CalendarView calendarView;
     private int year, month, dayOfMonth;
 
     private ListView sportList;
-    private ArrayList<Data> sportDataList = new ArrayList<> ();
+    private ArrayList<SchData> sportDataList = new ArrayList<> ();
 
     private Button btnOk;
     private int amount=0;
@@ -50,7 +49,7 @@ public class SubActivity4 extends AppCompatActivity {
                         Log.i("디버깅", "코드3 : " + sportName);
                         Log.i("디버깅", "코드4 : " + setNum);
                         Log.i("디버깅", "코드5 : " + realNum);
-                        Data a = new Data(date, checkBox, sportName, setNum, realNum,false);
+                        SchData a = new SchData(date, checkBox, sportName, setNum, realNum,false);
 
                         boolean b=false;
                         for(int j=0; j<sportDataList.size(); j++){
@@ -88,7 +87,7 @@ public class SubActivity4 extends AppCompatActivity {
 
                 Log.i("디버깅", "코드6 : " + sportDataList);
 
-                ArrayList<Data> a = new ArrayList<> ();
+                ArrayList<SchData> a = new ArrayList<> ();
 
                 for(int j = 0; j < sportDataList.size(); j++) {
                     if(sportDataList.get(j).getDate().equals(year+"/"+month+"/"+dayOfMonth)) {
@@ -105,7 +104,7 @@ public class SubActivity4 extends AppCompatActivity {
         schAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SubActivity4.this, MenuActivity1.class);
+                Intent intent = new Intent(SchSubActivity4.this, SchMenuActivity1.class);
                 intent.putExtra("year", year);
                 intent.putExtra("month", month);
                 intent.putExtra("dayOfMonth", dayOfMonth);
@@ -157,9 +156,9 @@ public class SubActivity4 extends AppCompatActivity {
     }
 
     // 리스트에 데이터 삽입 메서드 & 어뎁터 셋팅팅
-    public void listAddData(ArrayList<Data> arrayList){
+    public void listAddData(ArrayList<SchData> arrayList){
         Log.i("디버깅", arrayList.size() + "");
-        final MyAdapter myAdapter = new MyAdapter(this,arrayList);
+        final SchMyAdapter myAdapter = new SchMyAdapter(this,arrayList);
         sportList.setAdapter(myAdapter);
 
 

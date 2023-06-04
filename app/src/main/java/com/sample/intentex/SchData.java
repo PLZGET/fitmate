@@ -1,6 +1,6 @@
 package com.sample.intentex;
 
-public class Data {
+public class SchData {
     private String date;
     private String body;
     private String sportName;
@@ -8,7 +8,7 @@ public class Data {
     private String num;
     private boolean okOrNo;
 
-    public Data(String date, String body, String sportName, String setNum, String num, boolean okOrNo ){
+    public SchData(String date, String body, String sportName, String setNum, String num, boolean okOrNo ){
         this.date = date;
         this.body = body;
         this.sportName = sportName;

@@ -1,53 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--activity_main.xml from meal -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/rootLayout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
-    tools:context=".MainActivity">
-
-    <!-- 1. 식단 추천(블로그 링크 연결하기) -->
-
-    <ImageButton
-        android:id="@+id/recommendButton"
-        android:layout_width="match_parent"
-        android:layout_height="240dp"
-        android:contentDescription="식단 추천"
-        android:onClick="onRecommendButtonClick"
-        android:scaleType="fitCenter"
-        android:src="@drawable/diet2" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="식단 추천"
-        android:textAlignment="center" />
-
-    <!-- 2. 나의 식단(게시판처럼 입력한 식단 내용 넣기) -->
-    <ImageButton
-        android:id="@+id/myDietButton"
-        android:layout_width="match_parent"
-        android:layout_height="240dp"
-        android:contentDescription="나의 식단"
-        android:onClick="onMyDietButtonClick"
-        android:scaleType="fitCenter"
-        android:src="@drawable/diet1" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="나의 식단"
-        android:textAlignment="center" />
-
-    <!-- 3. 식단 입력하기 버튼으로 식단 입력하는 페이지로 이동 -->
-    <Button
-        android:id="@+id/inputDietButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="onInputDietButtonClick"
-        android:text="식단 입력하기" />
-
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/rootLayout" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="16dp" tools:context=".MainActivity">
+    <!--  1. 식단 추천(블로그 링크 연결하기)  -->
+    <ImageButton android:id="@+id/recommendButton" android:layout_width="match_parent" android:layout_height="240dp" android:contentDescription="식단 추천" android:onClick="onRecommendButtonClick" android:scaleType="fitCenter" android:src="@drawable/diet2"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="식단 추천" android:textAlignment="center"/>
+    <!--  2. 나의 식단(게시판처럼 입력한 식단 내용 넣기)  -->
+    <ImageButton android:id="@+id/myDietButton" android:layout_width="match_parent" android:layout_height="240dp" android:contentDescription="나의 식단" android:onClick="onMyDietButtonClick" android:scaleType="fitCenter" android:src="@drawable/rcdimg"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="나의 식단" android:textAlignment="center"/>
+    <!--  3. 식단 입력하기 버튼으로 식단 입력하는 페이지로 이동  -->
+    <Button android:id="@+id/inputDietButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="onInputDietButtonClick" android:text="식단 입력하기"/>
 </LinearLayout>

@@ -23,7 +23,7 @@ public class SubActivity3 extends AppCompatActivity {
         recommendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String blogLink = "https://example.com";
+                String blogLink = "https://www.elle.co.kr/article/70776";
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(blogLink));
                 startActivity(intent);
             }
@@ -35,7 +35,7 @@ public class SubActivity3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // 나의 식단 페이지로 이동하는 코드 작성
-                Intent intent = new Intent(SubActivity3.this, MyDietActivity.class);
+                Intent intent = new Intent(SubActivity3.this, SuMyDietActivity.class);
                 startActivity(intent);
             }
         });
@@ -46,30 +46,8 @@ public class SubActivity3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // 식단 입력하기 페이지로 이동하는 코드 작성
-                Intent intent = new Intent(SubActivity3.this, InputDietActivity.class);
+                Intent intent = new Intent(SubActivity3.this, SuInputDietActivity.class);
                 startActivity(intent);
             }
         });
-    }
-
-    public void onRecommendButtonClick(View view) {
-        // 식단 추천 버튼 클릭 시 처리하는 메서드
-        String blogLink = "https://todayfoodpic.netlify.app/"; // 식단 추천을 위한 블로그 링크
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(blogLink));
-        startActivity(intent);
-
-    }
-
-    public void onMyDietButtonClick(View view) {
-        // 나의 식단 버튼 클릭 시 처리하는 메서드
-        Intent intent = new Intent(SubActivity3.this, MyDietActivity.class);
-        startActivity(intent);
-    }
-
-    public void onInputDietButtonClick(View view) {
-
-        // 식단 입력하기 버튼 클릭 시 처리하는 메서드
-        Intent intent = new Intent(SubActivity3.this, InputDietActivity.class);
-        startActivity(intent);
-    }
-}
+    }}

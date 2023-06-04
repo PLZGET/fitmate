@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         btn_move2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, SubActivity2.class);
+                Intent intent = new Intent(MainActivity.this, SangSubActivity2.class);
                 startActivity(intent); //체중관리 액티비티 이동
             }
         });
@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         btn_move4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, SubActivity4.class);
+                Intent intent = new Intent(MainActivity.this, SchSubActivity4.class);
                 startActivity(intent); //캘린더 액티비티 이동
             }
         });
